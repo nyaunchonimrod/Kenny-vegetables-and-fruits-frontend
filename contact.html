@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Elegance Fashion Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .btn-primary {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #c0392b;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: #333;
+      border: 2px solid #333;
+    }
+
+    .btn-secondary:hover {
+      background-color: #333;
+      color: white;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: #e74c3c;
+      border: 2px solid #e74c3c;
+    }
+
+    .btn-outline:hover {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 3px;
+      background-color: #e74c3c;
+      margin: 10px auto 20px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+   
+    .main-header {
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header-top {
+      background-color: #f8f8f8;
+      padding: 10px 0;
+      font-size: 0.9rem;
+    }
+
+    .header-top-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 15px;
+    }
+
+    .header-actions a {
+      position: relative;
+    }
+
+    .cart-count {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background-color: #e74c3c;
+      color: white;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      font-size: 0.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-main {
+      padding: 15px 0;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .store-title {
+      font-size: 2.5rem;
+      margin-bottom: 0;
+      color: #333;
+    }
+
+    .store-subtitle {
+      font-size: 0.9rem;
+      letter-spacing: 3px;
+      color: #e74c3c;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-link {
+      font-weight: 600;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: #e74c3c;
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #e74c3c;
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+   
+    .page-header {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .breadcrumb a {
+      transition: color 0.3s ease;
+    }
+
+    .breadcrumb a:hover {
+      color: #e74c3c;
+    }
+
+    .breadcrumb .separator {
+      margin: 0 5px;
+    }
+
+
+    .contact-section {
+      padding: 80px 0;
+    }
+
+    .contact-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    .contact-info {
+      padding: 30px;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+    }
+
+    .contact-info h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .contact-details {
+      margin-bottom: 40px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background-color: #e74c3c;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .contact-text h3 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    .contact-text p {
+      color: #666;
+      margin-bottom: 0;
+    }
+
+    .business-hours {
+      margin-top: 40px;
+    }
+
+    .business-hours h3 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .hours-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .hours-list li:last-child {
+      border-bottom: none;
+    }
+
+    .day {
+      font-weight: 600;
+    }
+
+    .hours {
+      color: #666;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      padding: 30px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-form h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: #e74c3c;
+    }
+
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+  
+    .faq-section {
+      padding: 80px 0;
+      background-color: #f8f8f8;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq-question {
+      padding: 20px;
+      background-color: white;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .faq-question:hover {
+      background-color: #f0f0f0;
+    }
+
+    .faq-question i {
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-question i {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      background-color: white;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      padding: 20px;
+      max-height: 500px;
+    }
+
+    /* Store Locations */
+    .locations-section {
+      padding: 80px 0;
+    }
+
+    .locations-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .location-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .location-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .location-image {
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .location-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .location-content {
+      padding: 20px;
+    }
+
+    .location-content h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .location-content p {
+      color: #666;
+      margin-bottom: 15px;
+      font-size: 0.95rem;
+    }
+
+    .location-details {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .location-details i {
+      color: #e74c3c;
+    }
+
+   
+    .map-section {
+      padding: 80px 0 0;
+    }
+
+    .map-container {
+      height: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .map-placeholder {
+      height: 100%;
+      background: linear-gradient(135deg, #f8f8f8 0%, #e8e8e8 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+    }
+
+    .map-placeholder i {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #e74c3c;
+    }
+
+        .newsletter {
+      padding: 80px 0;
+      background-color: #333;
+      color: white;
+    }
+
+    .newsletter-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .newsletter-text h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .newsletter-text p {
+      color: #ccc;
+    }
+
+    .newsletter-form {
+      flex: 0 0 50%;
+    }
+
+    .newsletter-form form {
+      display: flex;
+      gap: 10px;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 12px 15px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .newsletter-form button {
+      white-space: nowrap;
+    }
+
+    
+    .main-footer {
+      background-color: #222;
+      color: #ccc;
+      padding: 60px 0 0;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-section h3 {
+      color: white;
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+
+    .footer-section h4 {
+      color: white;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .footer-section p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background-color: #e74c3c;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul li a {
+      transition: color 0.3s ease;
+    }
+
+    .footer-section ul li a:hover {
+      color: #e74c3c;
+    }
+
+    .contact-info li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .contact-info i {
+      color: #e74c3c;
+      margin-top: 3px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #444;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .payment-methods {
+      display: flex;
+      gap: 10px;
+      font-size: 1.5rem;
+    }
+
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background-color: #c0392b;
+    }
+
+    
+    @media (max-width: 1024px) {
+      .contact-content {
+        grid-template-columns: 1fr;
+      }
+      
+      .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .locations-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .newsletter-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .newsletter-form form {
+        flex-direction: column;
+      }
+      
+      .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      
+      .main-nav.active {
+        display: block;
+      }
+      
+      .main-nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .mobile-menu-toggle {
+        display: block;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+      
+      .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+      
+      .page-header h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+  <header class="main-header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-content">
+          <div class="header-promo">
+            <p><i class="fas fa-shipping-fast"></i> Free shipping on orders over $100</p>
+          </div>
+          <div class="header-actions">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i> <span class="cart-count">0</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="header-main">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1 class="store-title">Elegance</h1>
+            <span class="store-subtitle">Fashion Store</span>
+          </div>
+          
+          <nav class="main-nav">
+          <ul>
+              <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="about.html" class="nav-link">about us</a></li>
+              <li><a href="login.html" class="nav-link">Log in</a></li>
+              <li><a href="fruits.html" class="nav-link">Fruits</a></li>
+              <li><a href="vegetables.html" class="nav-link">Vegetables</a></li>
+             
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+          
+          <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <h2>Get In Touch</h2>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Our Address</h3>
+                <p>123 Fashion Street, Buembu, Bs 354</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Phone Number</h3>
+                <p>+254 757284998</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Email Address</h3>
+                <p>info@elegancefashion.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Working Hours</h3>
+                <p>Monday - Friday: 9AM - 6PM</p>
+                <p>Saturday: 10AM - 4PM</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="business-hours">
+            <h3>Store Hours</h3>
+            <ul class="hours-list">
+              <li>
+                <span class="day">Monday - Friday</span>
+                <span class="hours">9:00 AM - 6:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Saturday</span>
+                <span class="hours">10:00 AM - 4:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Sunday</span>
+                <span class="hours">Closed</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-control" placeholder="Enter subject" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea id="message" class="form-control" placeholder="Enter your message" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Find answers to common questions about our store and services</p>
+      </div>
+      
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is your return policy?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We offer a 30-day return policy for all items in their original condition with tags attached. Items must be unworn, unwashed, and in their original packaging. Sale items may have different return conditions.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do you offer international shipping?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we ship to over 50 countries worldwide. Shipping costs and delivery times vary by location. You can calculate shipping costs during checkout.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How can I track my order?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Once your order ships, you'll receive a confirmation email with a tracking number and link. You can also track your order by logging into your account on our website.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What payment methods do you accept?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We accept Mpesa,PayPal, Apple Pay, and Google Pay. All payments are processed securely.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do you have physical stores?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we have several physical stores across the country. You can find our store locations in the "Store Locations" section below.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="locations-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Store Locations</h2>
+        <p class="section-subtitle">Visit us at one of our physical stores</p>
+      </div>
+      
+      <div class="locations-grid">
+        <div class="location-card">
+          <div class="location-image">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="New York Store">
+          </div>
+          <div class="location-content">
+            <h3>Ikoma Flagship</h3>
+            <p>Our main store located in the heart of Manhattan featuring our complete collection.</p>
+            <div class="location-details">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>134, Kikongwe</span>
+            </div>
+            <div class="location-details">
+              <i class="fas fa-phone"></i>
+              <span>+254 717536367</span>
+            </div>
+            <div class="location-details">
+              <i class="fas fa-clock"></i>
+              <span>Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="location-card">
+          <div class="location-image">
+            <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Los Angeles Store">
+          </div>
+          <div class="location-content">
+            <h3>Bondo Nyironge</h3>
+            <p>Our West Coast location featuring exclusive inspired collections.</p>
+            <div class="location-details">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>456 Bondo B</span>
+            </div>
+            <div class="location-details">
+              <i class="fas fa-phone"></i>
+              <span>+254 753667663</span>
+            </div>
+            <div class="location-details">
+              <i class="fas fa-clock"></i>
+              <span>Mon-Fri: 10AM-7PM, Sat: 11AM-5PM</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="location-card">
+          <div class="location-image">
+            <img src="https://images.unsplash.com/photo-1516455207993-9d2c5e1d7c18?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Chicago Store">
+          </div>
+          <div class="location-content">
+            <h3>Mikei</h3>
+            <p>Our Midwest location in the vibrant downtown Masara shopping district.</p>
+            <div class="location-details">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>453, Mikei </span>
+            </div>
+            <div class="location-details">
+              <i class="fas fa-phone"></i>
+              <span>+254 767565445</span>
+            </div>
+            <div class="location-details">
+              <i class="fas fa-clock"></i>
+              <span>Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Find Us</h2>
+        <p class="section-subtitle">Visit our flagship store in Migori Town</p>
+      </div>
+      
+      <div class="map-container">
+        <div class="map-placeholder">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3>Interactive Map</h3>
+          <p>This would display an interactive map showing our store locations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <div class="newsletter-text">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Be the first to know about new arrivals, exclusive offers, and fashion tips</p>
+        </div>
+        <div class="newsletter-form">
+          <form>
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="logo">
+            <h3>Elegance</h3>
+            <span>Fashion Store</span>
+          </div>
+          <p>Where creativity meets desire. We offer high-quality fashion at affordable prices with exceptional customer service.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        
+         <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <ul>
+              <li><a href="index.html" class="nav-link active">Home</a></li>
+              <li><a href="about.html" class="nav-link">about us</a></li>
+              <li><a href="login.html" class="nav-link">Log in</a></li>
+              <li><a href="fruits.html" class="nav-link">Fruits</a></li>
+              <li><a href="vegetables.html" class="nav-link">Vegetables</a></li>
+             
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 941,Ore Suna Migori</li>
+            <li><i class="fas fa-phone"></i> +254</li>
+            <li><i class="fas fa-envelope"></i> info@elegancefashion.com</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Elegance Fashion Store. All Rights Reserved.</p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ 
+
+  <button id="backToTop" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+ 
+  </script>
+</body>
+</html>
