@@ -602,7 +602,7 @@ img {
 
 .newsletter {
   padding: 80px 0;
-  background-color: #333;
+  background-color: #006400;
   color: white;
 }
 
@@ -674,7 +674,7 @@ img {
 .testimonial-content p {
   font-style: italic;
   margin-bottom: 20px;
-  color: #666;
+  color: #000000;
 }
 
 .customer-info {
@@ -703,7 +703,7 @@ img {
 
 .main-footer {
   background-color: #222;
-  color: #ccc;
+  color: #dcdcdc;
   padding: 60px 0 0;
 }
 
@@ -739,7 +739,7 @@ img {
 .social-links a {
   width: 40px;
   height: 40px;
-  background-color: #333;
+  background-color: #006400;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -748,7 +748,7 @@ img {
 }
 
 .social-links a:hover {
-  background-color: #d4a574;
+  background-color: #ffb100;
 }
 
 .footer-section ul li {
@@ -760,7 +760,7 @@ img {
 }
 
 .footer-section ul li a:hover {
-  color: #d4a574;
+  color: #006400;
 }
 
 .contact-info li {
@@ -771,7 +771,7 @@ img {
 }
 
 .contact-info i {
-  color: #d4a574;
+  color: #ffb100;
   margin-top: 3px;
 }
 
