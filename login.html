@@ -1,136 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>kenny vegetables | Login</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-#login {
+    #login {
       background-color: #dcdcdc;
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #dcdcdc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 120vh;
-  color: #ffffff;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #dcdcdc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 120vh;
+      color: #ffffff;
 
-.container {
-  text-align: center;
-  height: 100vh;
-}
+      .container {
+        text-align: center;
+        height: 100vh;
+      }
 
 
-.logo {
-  font-size: 2rem;
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
+      .logo {
+        font-size: 2rem;
+        color: #ffffff;
+        margin-bottom: 1rem;
+      }
 
-.logo span {
-  font-size: 1rem;
-  display: block;
-  margin-top: 0.5rem;
-  color: #ccc;
-}
+      .logo span {
+        font-size: 1rem;
+        display: block;
+        margin-top: 0.5rem;
+        color: #ccc;
+      }
 
-.card {
-  background-color: #ffb100;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  width: 300px;
-  text-align: left;
-}
+      .card {
+        background-color: #ffb100;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        text-align: left;
+      }
 
-.card h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.25rem;
-}
+      .card h2 {
+        margin-bottom: 1.5rem;
+        font-size: 1.25rem;
+      }
 
-label {
-  display: block;
-  margin-bottom: 0.25rem;
-  font-size: 0.9rem;
-}
+      label {
+        display: block;
+        margin-bottom: 0.25rem;
+        font-size: 0.9rem;
+      }
 
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: none;
-  border-radius: 6px;
-  background-color: #000000;
-  color: #fff;
-  font-size: 1rem;
-}
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 6px;
+        background-color: #000000;
+        color: #fff;
+        font-size: 1rem;
+      }
 
-.options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.85rem;
-  margin-bottom: 1rem;
-}
+      .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+      }
 
-.options a {
-  color: #888;
-  text-decoration: none;
-}
+      .options a {
+        color: #888;
+        text-decoration: none;
+      }
 
-.options a:hover {
-  text-decoration: underline;
-}
+      .options a:hover {
+        text-decoration: underline;
+      }
 
-button {
-  width: 100%;
-  padding: 0.75rem;
-  background-color: #006400;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-}
+      button {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #006400;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
 
-button:hover {
-  background-color:#006400;
- 
-}
+      button:hover {
+        background-color: #006400;
+
+      }
     }
   </style>
 </head>
-<body>
-   <main id="login">
-  <div class="card">
-    <div class="img">
-      <h2>log in with your password</h2>
-      <form action="action.php">
-        <label for="email"></label>
-        <input type="text" id="email" placeholder="Phone No/email" required />
-    
-        <label for="password"></label>
-        <input type="password" id="password" placeholder="please input you password" required />
 
-        <div class="remember-forgot password">
-          <label><input type="checkbox" /> Remember me</label>
-          <a href="">Forgot password?</a>
-        </div> <br>
-    
-        <button type="submit">log in</button> <br><br>
-      <p class="signup-text">Don't have an account yet? <a href="signup.html">Sign up</a></p>
-      </form>
-    </div>
+<body>
+  <main id="login">
+    <div class="card">
+      <div class="img">
+        <h2>log in with your password</h2>
+        <form action="action.php">
+          <label for="email"></label>
+          <input type="text" id="email" placeholder="Phone No/email" required />
+
+          <label for="password"></label>
+          <input type="password" id="password" placeholder="please input you password"required>
+
+          <div> class="remember-forgot password">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="">Forgot password?</a>
+          </div> <br>
+
+          <button type="submit">log in</button> <br><br>
+          <p class="signup-text">Don't have an account yet? <a href="signup.html">Sign up</a></p>
+        </form>
+      </div>
 
   </main>
-  
- 
+
+
   <button id="backToTop" class="back-to-top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
 </body>
+
 </html>
